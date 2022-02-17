@@ -18,6 +18,7 @@
 }
 .crousel .crousel_item_visible{
     display: block;
+    animation: fadeVisibility 0.5s;
 }
 
 .crousel .crousel_action{
@@ -33,3 +34,12 @@
     font-weight: bold;
 }
 
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
